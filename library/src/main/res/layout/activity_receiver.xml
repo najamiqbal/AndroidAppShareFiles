@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/LR_topAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adUnitBanner">
+    </com.google.android.gms.ads.AdView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/LR_topAd"
+        android:background="@drawable/background_color"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/p2p_receiver_ap_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/p2p_label_receive_files"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:theme="@style/p2p_switch" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/p2p_receiver_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:paddingLeft="@dimen/p2p_wifi_info_layout_padding"
+        android:paddingRight="@dimen/p2p_wifi_info_layout_padding"
+        android:paddingTop="@dimen/p2p_wifi_info_layout_padding">
+
+        <TextView
+            android:id="@+id/p2p_receiver_wifi_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/p2p_sender_activity_items_margin"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="@string/p2p_receiver_hint_text" />
+
+        <TextView
+            android:id="@+id/p2p_receiver_wifi_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p2p_receiver_wifi_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p2p_wifi_info_layout_padding"
+            android:textColor="#000"
+            android:text="@string/p2p_connect_to_diff_sender"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/p2p_sender_files_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p2p_receiver_wifi_switch"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/ic_pointing_down"
+            android:drawablePadding="10dp"
+            android:textColor="#FFFF"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:background="@drawable/roundedbutton"
+            android:layout_centerHorizontal="true"
+            android:text="@string/p2p_receiver_files_header"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/sender_files_list_fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/p2p_receiver_control_layout" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/LR_bottomAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adUnitBanner">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

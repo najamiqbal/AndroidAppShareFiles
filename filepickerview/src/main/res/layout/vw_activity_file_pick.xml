@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/LDoc_topAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerunitid">
+    </com.google.android.gms.ads.AdView>
+
+
+    <include android:id="@+id/tb_pick"
+        android:layout_below="@+id/LDoc_topAd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/vw_layout_top_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_file_pick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tb_pick" />
+
+    <ProgressBar android:id="@+id/pb_file_pick"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/LDoc_bottomAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerunitid">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

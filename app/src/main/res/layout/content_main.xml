@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainScreen"
+    android:background="#FFFFFF"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/sendbtn"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:background="@drawable/send"
+            />
+        <ImageView
+            android:id="@+id/receivebtn"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@drawable/receive_icon"
+            />
+
+        <ImageView
+            android:id="@+id/historybtn"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@drawable/history_icon"
+            />
+
+        <ImageButton
+            android:id="@+id/invitebtn"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@drawable/invite_user"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="4"
+        android:layout_below="@+id/btnlayout"
+        android:orientation="horizontal"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            android:text="Send"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            android:text="Receive"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="History"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Invite"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Webreceivebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10"
+        android:drawableLeft="@drawable/ic_globe"
+        android:drawablePadding="15dp"
+        android:background="@drawable/roundedbutton"
+        android:layout_above="@+id/bottomad"
+        android:layout_margin="@dimen/dimen_10"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"
+        android:text="Download files from Browser"
+        android:drawableStart="@drawable/ic_globe"
+        />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottomad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerunitid">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

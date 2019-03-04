@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/history_list_row"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingBottom="@dimen/dimen_10"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+   >
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="@dimen/dot_margin_right"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:includeFontPadding="false"
+        />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dot"
+        android:textColor="@color/timestamp"
+        android:textSize="@dimen/timestamp" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timestamp"
+        android:layout_toRightOf="@id/dot"
+        android:textColor="@color/note_list_text"
+        android:textSize="@dimen/note_list_text" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

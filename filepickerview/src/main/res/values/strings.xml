@@ -1,0 +1,23 @@
+<resources>
+    <string name="vw_confirm">Done</string>
+    <string name="vw_no_video_play_app">No App exists for playing video!</string>
+    <string name="vw_record_audio">Record Audio</string>
+    <string name="vw_rationale_storage">Need Reading Storage Permission for Picking Files</string>
+    <string name="vw_up_to_max">Already up to max</string>
+    <string name="vw_no_photo_app">No photo App in this phone!</string>
+    <string name="vw_no_audio_play_app">No App exists for playing audio!</string>
+    <string name="vw_no_video_app">No video App in this phone!</string>
+    <string name="vw_no_audio_app">No audio App in this phone!</string>
+    <string name="vw_all">All</string>
+
+<!--for test-->
+    <string name="ApAdId">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="interstitialunitid">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="bannerunitid">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!-- for real-->
+<!--        <string name="ApAdId">ca-app-pub-2787261366965317~1817025034</string>
+        <string name="interstitialunitid">ca-app-pub-2787261366965317/6946843036</string>
+        <string name="bannerunitid">ca-app-pub-2787261366965317/6866951984</string>-->
+
+</resources>

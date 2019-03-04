@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FAST SHARING APP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">FAST SHARING APP</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="banner_view_id">ca-app-pub-2787261366965317/6866951984</string>
+
+   <!-- for real-->
+
+<!--    <string name="ApAdId">ca-app-pub-2787261366965317~1817025034</string>
+    <string name="interstitialunitid">ca-app-pub-2787261366965317/6946843036</string>
+    <string name="bannerunitid">ca-app-pub-2787261366965317/6866951984</string>-->
+
+
+<!--for test-->
+    <string name="ApAdId">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="interstitialunitid">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="bannerunitid">ca-app-pub-3940256099942544/6300978111</string>
+
+
+</resources>
